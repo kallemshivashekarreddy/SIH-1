@@ -1,0 +1,14 @@
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://url-link-shortener.p.rapidapi.com/v1/domains?limit=100&orderBy=createdAt&orderDir=desc",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "url-link-shortener.p.rapidapi.com",
+		"x-rapidapi-key": "SIGN-UP-FOR-KEY"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
